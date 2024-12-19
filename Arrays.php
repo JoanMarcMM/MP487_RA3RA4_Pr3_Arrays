@@ -17,9 +17,13 @@ Muestra los valores del array anterior uƟlizando foreach.
     echo "<h1>Ejercicio 1 </h1>";
     //Creacion Array asociativo
     $arrayEjercicio1 = array("nombre" => "Sara", "apellido" => "Martínez", "edad" => "23", "ciudad" => "Barcelona");
+    //Creo variable x que ira aumentando 
+    $x = 1;
     //Foreach para recorrer el array asociativo
     foreach ($arrayEjercicio1 as $value) {
-        echo "$value <br>";
+        echo "dato " . $x . "º : $value <br>";
+        //Le sumo 1 a x
+        $x++;
     }
 
 
